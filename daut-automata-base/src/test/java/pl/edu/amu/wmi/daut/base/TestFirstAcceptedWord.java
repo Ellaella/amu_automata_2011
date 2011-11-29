@@ -5,9 +5,9 @@ import junit.framework.TestCase;
 /**
 test metody FirstAcceptedWord
  */
-public class TestFirstAcceptedWord extends TestCase{
+public class TestFirstAcceptedWord extends TestCase {
     
-	public final void testFirstAcceptedWordEmpty(){
+	public final void testFirstAcceptedWordEmpty() {
 	AutomatonSpecification a = new NaiveAutomatonSpecification();
 	State s0 = a.addState();
 	a.markAsInitial(s0);
@@ -15,7 +15,7 @@ public class TestFirstAcceptedWord extends TestCase{
 	assertEquals(a.firstAcceptedWord(), "");
 }
 	
-	public final void testFirstAcceptedWordA(){
+	public final void testFirstAcceptedWordA() {
 	AutomatonSpecification a = new NaiveAutomatonSpecification();
 	State s0 = a.addState();
 	State s1 = a.addState();
@@ -30,7 +30,7 @@ public class TestFirstAcceptedWord extends TestCase{
 	assertEquals(a.firstAcceptedWord(), "");
 }
 
-	public final void testFirstAcceptedWordB(){
+	public final void testFirstAcceptedWordB() {
 	AutomatonSpecification a = new NaiveAutomatonSpecification();
 	State s0 = a.addState();
 	State s1 = a.addState();
@@ -49,7 +49,7 @@ public class TestFirstAcceptedWord extends TestCase{
 	a.addTransition(s0, s1, new CharTransitionLabel('b'));
 	assertEquals(a.firstAcceptedWord(), "b");
 }
-public final void testFirstAcceptedWordC(){
+public final void testFirstAcceptedWordC() {
 	AutomatonSpecification a = new NaiveAutomatonSpecification();
 	State s0 = a.addState();
 	State s1 = a.addState();
@@ -68,7 +68,7 @@ public final void testFirstAcceptedWordC(){
 	assertEquals(a.firstAcceptedWord(), "");//brak pierwszego slowa
 }
 
-public final void testFirstAcceptedWordD(){
+public final void testFirstAcceptedWordD() {
 	AutomatonSpecification a = new NaiveAutomatonSpecification();
 	State s0 = a.addState();
 	State s1 = a.addState();
