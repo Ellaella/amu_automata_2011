@@ -7,7 +7,7 @@ test metody FirstAcceptedWord.
  */
 public class TestFirstAcceptedWord extends TestCase {
 
-/** automatPusty */
+/** automatPusty. */
 
     public final void testFirstAcceptedWordEmpty() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -17,7 +17,7 @@ public class TestFirstAcceptedWord extends TestCase {
     assertEquals(a.firstAcceptedWord(), "");
 }
 
-/** automatA */
+/** automatA. */
 
     public final void testFirstAcceptedWordA() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -34,7 +34,7 @@ public class TestFirstAcceptedWord extends TestCase {
     assertEquals(a.firstAcceptedWord(), "");
 }
 
-/** automatB */
+/** automatB. */
 
     public final void testFirstAcceptedWordB() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -56,7 +56,7 @@ public class TestFirstAcceptedWord extends TestCase {
     assertEquals(a.firstAcceptedWord(), "b");
 }
 
-/** automatC */
+/** automatC. */
 
 public final void testFirstAcceptedWordC() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -77,7 +77,7 @@ public final void testFirstAcceptedWordC() {
     assertEquals(a.firstAcceptedWord(), "");//brak pierwszego slowa
 }
 
-/** automatD */
+/** automatD. */
 
 public final void testFirstAcceptedWordD() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
