@@ -3,10 +3,10 @@ package pl.edu.amu.wmi.daut.base;
 import junit.framework.TestCase;
 
 /**
-test metody FirstAcceptedWord
+test metody FirstAcceptedWord.
  */
 public class TestFirstAcceptedWord extends TestCase {
-    
+
 	public final void testFirstAcceptedWordEmpty() {
 	AutomatonSpecification a = new NaiveAutomatonSpecification();
 	State s0 = a.addState();
@@ -14,9 +14,10 @@ public class TestFirstAcceptedWord extends TestCase {
 	a.markAsFinal(s0);
 	assertEquals(a.firstAcceptedWord(), "");
 }
-	
-	public final void testFirstAcceptedWordA() {
-	AutomatonSpecification a = new NaiveAutomatonSpecification();
+
+/** automatA */
+    public final void testFirstAcceptedWordA() {
+    AutomatonSpecification a = new NaiveAutomatonSpecification();
 	State s0 = a.addState();
 	State s1 = a.addState();
 	State s2 = a.addState();
