@@ -18,7 +18,7 @@ public class TestFirstAcceptedWord extends TestCase {
 }
 
 /** automatA. */
-/*
+
     public final void testFirstAcceptedWordA() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
