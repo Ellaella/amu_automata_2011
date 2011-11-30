@@ -8,6 +8,7 @@ test metody FirstAcceptedWord.
 public class TestFirstAcceptedWord extends TestCase {
 
 /** automatPusty */
+
     public final void testFirstAcceptedWordEmpty() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -17,6 +18,7 @@ public class TestFirstAcceptedWord extends TestCase {
 }
 
 /** automatA */
+
     public final void testFirstAcceptedWordA() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -31,6 +33,8 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s0, s1, new CharTransitionLabel('a'));
     assertEquals(a.firstAcceptedWord(), "");
 }
+
+/** automatB */
 
     public final void testFirstAcceptedWordB() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -51,6 +55,9 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s0, s1, new CharTransitionLabel('b'));
     assertEquals(a.firstAcceptedWord(), "b");
 }
+
+/** automatC */
+
 public final void testFirstAcceptedWordC() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -69,6 +76,8 @@ public final void testFirstAcceptedWordC() {
     a.addTransition(s1, s2, new CharTransitionLabel('a'));
     assertEquals(a.firstAcceptedWord(), "");//brak pierwszego slowa
 }
+
+/** automatD */
 
 public final void testFirstAcceptedWordD() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
