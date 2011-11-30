@@ -8,7 +8,7 @@ test metody FirstAcceptedWord.
 public class TestFirstAcceptedWord extends TestCase {
 
 /** automatPusty. */
-/*
+
     public final void testFirstAcceptedWordEmpty() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -16,9 +16,9 @@ public class TestFirstAcceptedWord extends TestCase {
     a.markAsFinal(s0);
     assertEquals(a.firstAcceptedWord(), "");
 }
-*/
+
 /** automatA. Nie pusty ale akceptuje slowo puste. */
-/*
+
     public final void testFirstAcceptedWordA() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -36,9 +36,9 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s2, s0, new CharTransitionLabel('a'));
     assertEquals(a.firstAcceptedWord(), "");
 }
-*/
+
 /** automatB. nic ciekawego. */
-/*
+
     public final void testFirstAcceptedWordB() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -58,7 +58,7 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s0, s1, new CharTransitionLabel('b'));
     assertEquals(a.firstAcceptedWord(), "b");
 }
-*/
+
 /** automatC. */
 /*
 public final void testFirstAcceptedWordC() {
@@ -81,7 +81,7 @@ public final void testFirstAcceptedWordC() {
 }*/
 
 /** automatD. jezyk akceptowany przezen jest nieskonczony*/
-/*
+
 public final void testFirstAcceptedWordD() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -100,7 +100,7 @@ public final void testFirstAcceptedWordD() {
     a.addTransition(s1, s2, new CharTransitionLabel('b'));
     assertEquals(a.firstAcceptedWord(), "aaa");
 }
-*/
+
 
 /** automatE. "Tasiemiec" ;] */
 
@@ -128,6 +128,7 @@ public final void testFirstAcceptedWordE() {
     a.addTransition(s5, s6, new CharTransitionLabel('k'));
     assertEquals(a.firstAcceptedWord(), "dcfk");
 }
+
 /** automatF. tez nieskonczony ;] */
 /*
 public final void testFirstAcceptedWordF() {
