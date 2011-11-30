@@ -7,7 +7,9 @@ test metody FirstAcceptedWord.
  */
 public class TestFirstAcceptedWord extends TestCase {
 
-/** automatPusty. */
+/** 
+automatPusty.
+*/
 
     public final void testFirstAcceptedWordEmpty() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -17,7 +19,9 @@ public class TestFirstAcceptedWord extends TestCase {
     assertEquals(a.firstAcceptedWord(), "");
 }
 
-/** automatA. Nie pusty ale akceptuje slowo puste. */
+/** 
+automatA. Nie pusty ale akceptuje slowo puste.
+*/
 
     public final void testFirstAcceptedWordA() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -37,7 +41,9 @@ public class TestFirstAcceptedWord extends TestCase {
     assertEquals(a.firstAcceptedWord(), "");
 }
 
-/** automatB. nic ciekawego. */
+/** 
+automatB. nic ciekawego.
+*/
 
     public final void testFirstAcceptedWordB() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -59,7 +65,9 @@ public class TestFirstAcceptedWord extends TestCase {
     assertEquals(a.firstAcceptedWord(), "b");
 }
 
-/** automatC. nie ma pierwszego slowa. */
+/** 
+automatC. nie ma pierwszego slowa.
+*/
 /*
 public final void testFirstAcceptedWordC() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -80,7 +88,9 @@ public final void testFirstAcceptedWordC() {
     assertEquals(a.firstAcceptedWord(), ""); //brak pierwszego slowa
 }*/
 
-/** automatD. jezyk akceptowany przezen jest nieskonczony*/
+/** 
+automatD. jezyk akceptowany przezen jest nieskonczony
+*/
 /*
 public final void testFirstAcceptedWordD() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -102,7 +112,9 @@ public final void testFirstAcceptedWordD() {
 }*/
 
 
-/** automatE. "Tasiemiec" ;] */
+/**
+automatE. "Tasiemiec".
+*/
 
 public final void testFirstAcceptedWordE() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
@@ -129,7 +141,10 @@ public final void testFirstAcceptedWordE() {
     assertEquals(a.firstAcceptedWord(), "dcfk");
 }
 
-/** automatF. tez nieskonczony ;] */
+/**
+automatF. tez nieskonczony.
+*/
+
 /*
 public final void testFirstAcceptedWordF() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
