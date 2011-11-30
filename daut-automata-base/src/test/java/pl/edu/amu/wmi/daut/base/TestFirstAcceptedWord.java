@@ -129,4 +129,34 @@ public final void testFirstAcceptedWordE() {
     assertEquals(a.firstAcceptedWord(), "dcf");
 }
 
+
+/** automatF. tez nieskonczony ;] */
+
+public final void testFirstAcceptedWordF() {
+    AutomatonSpecification a = new NaiveAutomatonSpecification();
+    State s0 = a.addState();
+    State s1 = a.addState();
+    State s2 = a.addState();
+    State s3 = a.addState();
+    State s4 = a.addState();
+    State s5 = a.addState();
+    State s6 = a.addState();
+    a.markAsInitial(s0);
+    a.markAsFinal(s6);
+    a.addTransition(s0, s1, new CharTransitionLabel('s'));
+    a.addTransition(s1, s0, new CharTransitionLabel('s'));
+    a.addTransition(s0, s2, new CharTransitionLabel('d'));
+    a.addTransition(s1, s2, new CharTransitionLabel('f'));
+    a.addTransition(s1, s3, new CharTransitionLabel('g'));
+    a.addTransition(s2, s3, new CharTransitionLabel('s'));
+    a.addTransition(s2, s4, new CharTransitionLabel('c'));
+    a.addTransition(s3, s4, new CharTransitionLabel('z'));
+    a.addTransition(s3, s5, new CharTransitionLabel('b'));
+    a.addTransition(s4, s5, new CharTransitionLabel('f'));
+    a.addTransition(s4, s6, new CharTransitionLabel('v'));
+    a.addTransition(s5, s6, new CharTransitionLabel('k'));
+    assertEquals(a.firstAcceptedWord(), "dcf");
+}
+
+
 }
