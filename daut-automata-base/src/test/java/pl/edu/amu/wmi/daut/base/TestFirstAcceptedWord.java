@@ -126,7 +126,7 @@ public final void testFirstAcceptedWordE() {
     a.addTransition(s4, s5, new CharTransitionLabel('f'));
     a.addTransition(s4, s6, new CharTransitionLabel('v'));
     a.addTransition(s5, s6, new CharTransitionLabel('k'));
-    assertEquals(a.firstAcceptedWord(), "dcf");
+    assertEquals(a.firstAcceptedWord(), "dcfk");
 }
 /** automatF. tez nieskonczony ;] */
 /*
