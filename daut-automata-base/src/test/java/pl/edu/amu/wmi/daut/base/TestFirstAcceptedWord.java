@@ -7,7 +7,7 @@ test metody FirstAcceptedWord.
  */
 public class TestFirstAcceptedWord extends TestCase {
 
-/** 
+/**
 automatPusty.
 */
 
@@ -19,7 +19,7 @@ automatPusty.
     assertEquals(a.firstAcceptedWord(), "");
 }
 
-/** 
+/**
 automatA. Nie pusty ale akceptuje slowo puste.
 */
 
@@ -41,7 +41,7 @@ automatA. Nie pusty ale akceptuje slowo puste.
     assertEquals(a.firstAcceptedWord(), "");
 }
 
-/** 
+/**
 automatB. nic ciekawego.
 */
 
@@ -65,7 +65,7 @@ automatB. nic ciekawego.
     assertEquals(a.firstAcceptedWord(), "b");
 }
 
-/** 
+/**
 automatC. nie ma pierwszego slowa.
 */
 /*
@@ -88,7 +88,7 @@ public final void testFirstAcceptedWordC() {
     assertEquals(a.firstAcceptedWord(), ""); //brak pierwszego slowa
 }*/
 
-/** 
+/**
 automatD. jezyk akceptowany przezen jest nieskonczony
 */
 /*
