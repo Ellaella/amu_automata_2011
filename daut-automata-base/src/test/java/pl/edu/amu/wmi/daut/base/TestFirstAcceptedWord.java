@@ -8,7 +8,7 @@ test metody FirstAcceptedWord.
 public class TestFirstAcceptedWord extends TestCase {
 
 /** automatPusty. */
-
+/*
     public final void testFirstAcceptedWordEmpty() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -16,9 +16,9 @@ public class TestFirstAcceptedWord extends TestCase {
     a.markAsFinal(s0);
     assertEquals(a.firstAcceptedWord(), "");
 }
-
+*/
 /** automatA. Nie pusty ale akceptuje slowo puste. */
-/*
+
     public final void testFirstAcceptedWordA() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -36,7 +36,7 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s2, s0, new CharTransitionLabel('a'));
     assertEquals(a.firstAcceptedWord(), "");
 }
-*/
+
 /** automatB. nic ciekawego. */
 /*
     public final void testFirstAcceptedWordB() {
