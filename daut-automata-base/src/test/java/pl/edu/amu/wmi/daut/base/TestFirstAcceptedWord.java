@@ -35,7 +35,7 @@ public class TestFirstAcceptedWord extends TestCase {
 }
 
 /** automatB. */
-
+/*
     public final void testFirstAcceptedWordB() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -54,10 +54,10 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s5, s6, new CharTransitionLabel('a'));
     a.addTransition(s0, s1, new CharTransitionLabel('b'));
     assertEquals(a.firstAcceptedWord(), "b");
-}
+}*/
 
 /** automatC. */
-
+/*
 public final void testFirstAcceptedWordC() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -75,10 +75,10 @@ public final void testFirstAcceptedWordC() {
     a.addTransition(s1, s0, new CharTransitionLabel('a'));
     a.addTransition(s1, s2, new CharTransitionLabel('a'));
     assertEquals(a.firstAcceptedWord(), "");//brak pierwszego slowa
-}
+}*/
 
 /** automatD. */
-
+/*
 public final void testFirstAcceptedWordD() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
