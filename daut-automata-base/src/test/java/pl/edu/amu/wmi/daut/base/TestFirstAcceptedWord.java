@@ -38,7 +38,7 @@ public class TestFirstAcceptedWord extends TestCase {
 }
 */
 /** automatB. nic ciekawego. */
-
+/*
     public final void testFirstAcceptedWordB() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -58,7 +58,7 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s0, s1, new CharTransitionLabel('b'));
     assertEquals(a.firstAcceptedWord(), "b");
 }
-
+*/
 /** automatC. */
 /*
 public final void testFirstAcceptedWordC() {
@@ -103,7 +103,7 @@ public final void testFirstAcceptedWordD() {
 */
 
 /** automatE. "Tasiemiec" ;] */
-/*
+
 public final void testFirstAcceptedWordE() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -128,8 +128,6 @@ public final void testFirstAcceptedWordE() {
     a.addTransition(s5, s6, new CharTransitionLabel('k'));
     assertEquals(a.firstAcceptedWord(), "dcf");
 }
-*/
-
 /** automatF. tez nieskonczony ;] */
 /*
 public final void testFirstAcceptedWordF() {
