@@ -18,7 +18,7 @@ public class TestFirstAcceptedWord extends TestCase {
 }
 */
 /** automatA. Nie pusty ale akceptuje slowo puste. */
-
+/*
     public final void testFirstAcceptedWordA() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -36,9 +36,9 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s2, s0, new CharTransitionLabel('a'));
     assertEquals(a.firstAcceptedWord(), "");
 }
-
+*/
 /** automatB. nic ciekawego. */
-/*
+
     public final void testFirstAcceptedWordB() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -58,7 +58,7 @@ public class TestFirstAcceptedWord extends TestCase {
     a.addTransition(s0, s1, new CharTransitionLabel('b'));
     assertEquals(a.firstAcceptedWord(), "b");
 }
-*/
+
 /** automatC. */
 /*
 public final void testFirstAcceptedWordC() {
