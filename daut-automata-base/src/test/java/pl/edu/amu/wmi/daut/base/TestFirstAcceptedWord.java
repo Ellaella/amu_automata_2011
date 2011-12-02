@@ -91,7 +91,7 @@ public final void testFirstAcceptedWordC() {
 /**
 automatD. jezyk akceptowany przezen jest nieskonczony
 */
-/*
+
 public final void testFirstAcceptedWordD() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -109,7 +109,7 @@ public final void testFirstAcceptedWordD() {
     a.addTransition(s1, s0, new CharTransitionLabel('b'));
     a.addTransition(s1, s2, new CharTransitionLabel('b'));
     assertEquals(a.firstAcceptedWord(), "aaa");
-}*/
+}
 
 
 /**
@@ -145,7 +145,6 @@ public final void testFirstAcceptedWordE() {
 automatF. tez nieskonczony.
 */
 
-/*
 public final void testFirstAcceptedWordF() {
     AutomatonSpecification a = new NaiveAutomatonSpecification();
     State s0 = a.addState();
@@ -170,7 +169,7 @@ public final void testFirstAcceptedWordF() {
     a.addTransition(s4, s6, new CharTransitionLabel('v'));
     a.addTransition(s5, s6, new CharTransitionLabel('k'));
     assertEquals(a.firstAcceptedWord(), "dcf");
-}*/
+}
 
 
 }
