@@ -39,7 +39,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         }
 
         //automatPusty
-        assertTrue(t.doCheckContext("", 0));
+        //assertTrue(t.doCheckContext("", 0));
         //pozycja==0
         assertTrue(t.doCheckContext("pampararam",0));
         //na poczatku wiersza
