@@ -32,7 +32,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         } catch (PositionOutOfStringBordersException e) {
             assertTrue(true);
         }
-        /*
+        
         //pozycja>dlugoscSlowa
         try {
             t.doCheckContext("srutututu", 10);
@@ -40,7 +40,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         } catch (PositionOutOfStringBordersException e) {
             assertTrue(true);
         }
-
+/*
         //automatPusty
         //assertTrue(t.doCheckContext("", 0));
         //pozycja==0
