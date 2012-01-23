@@ -6,9 +6,8 @@ import junit.framework.TestCase;
  * Klasa testujaca BeginingOfTextOrLineTransitionLabel.
  */
 public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
-
     /** 
-     * {testy} 
+     * testy.
      */
     public final void testEndOfTextOrLineTransitionLabel() {
         TransitionLabel t = new BeginingOfTextOrLineTransitionLabel();
@@ -26,7 +25,6 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         } catch (PositionOutOfStringBordersException e) {
             assertTrue(true);
         }
-       /*
         //pozycja>dlugoscSlowa
         try {
             t.doCheckContext("brlium\ntak", 15);
@@ -34,6 +32,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         } catch (PositionOutOfStringBordersException e) {
             assertTrue(true);
         }
+        /*
         //pozycja>dlugoscSlowa
         try {
             t.doCheckContext("srutututu", 10);
