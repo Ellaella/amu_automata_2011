@@ -45,7 +45,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         //pozycja==0. dziala
         assertTrue(t.doCheckContext("pampararam", 0));
         //na poczatku wiersza
-        assertTrue(t.doCheckContext("ja\nmhm", 4));
+        assertFalse(t.doCheckContext("ja\nmhm", 4));
         //w srodku wiersza
         //assertTrue(t.doCheckContext("baklazan", 5));
         //assertFalse(t.doCheckContext("srutu\ntutu", 5));
