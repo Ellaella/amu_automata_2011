@@ -7,6 +7,7 @@ import junit.framework.TestCase;
  */
 public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
 
+    /** testy */
     public final void testEndOfTextOrLineTransitionLabel() {
         TransitionLabel t = new BeginingOfTextOrLineTransitionLabel();
 
@@ -52,13 +53,3 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         //assertEquals(t.toString(), "EndOfTextOrLine");
     }
 }
-
-/* 	     @Override
- 	     protected boolean doCheckContext(String s, int position) {
- 	-        if (!s.isEmpty() && position == 0 || s.charAt(-1) == '\n') {
- 	+        if ((s.length() < position) || (position < 0)) {
- 	+            throw new PositionOutOfStringBordersException();
- 	+        } else if (!s.isEmpty() && position == 0 || s.charAt(-1) == '\n') {
-  	             return true;
-  	         }
-  	         return false;*/
