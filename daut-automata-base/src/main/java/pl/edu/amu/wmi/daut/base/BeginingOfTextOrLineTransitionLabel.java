@@ -11,7 +11,7 @@ public class BeginingOfTextOrLineTransitionLabel
     protected boolean doCheckContext(String s, int position) {
         if ((s.length() < position) || (position < 0)) {
             throw new PositionOutOfStringBordersException();
-        } else if (!s.isEmpty() && position == 0 || s.charAt(-1) == '\n') {
+        } else if ((!s.isEmpty() && position == 0 || s.charAt(-1) == '\n')  || (s.isEmpty() && position == 0)) {
             return true;
         }
         return false;
