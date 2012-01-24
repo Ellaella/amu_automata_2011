@@ -10,13 +10,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
      * testy.
      */
     public final void testBeginingOfTextOrLineTransitionLabel() {
-        TransitionLabel t = new BeginingOfTextOrLineTransitionLabel();
-
-        //hgw czy to trzeba
-        /*assertFalse(t.canAcceptCharacter('a'));
-        assertTrue(t.canBeEpsilon());
-        assertFalse(t.isEmpty());
-        assertTrue(t.isContextual());*/
+        TransitionLabel t = new BeginingOfTextOrLineTransitionLabel()
 
         //pozycja<0
        try {
@@ -41,14 +35,15 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         }
 
         //slowoPuste
-        //assertTrue(t.doCheckContext("", 0));
-        //pozycja==0. dziala
+        assertFalse(t.doCheckContext("", 0));
+        //pozycja==0
         assertTrue(t.doCheckContext("pampararam", 0));
-        //na poczatku wiersza
-        assertTrue(t.doCheckContext("ja\nmhm", 4));
+        //na nie-poczatku wiersza
+        assertFalse(t.doCheckContext("ja\nmhm", 4));
+		//na poczatku wiersza
+        assertTrue(t.doCheckContext("ja\nmhm", 3));
         //w srodku wiersza
-        //assertTrue(t.doCheckContext("baklazan", 5));
-        //assertFalse(t.doCheckContext("srutu\ntutu", 5));
+        assertFalse(t.doCheckContext("baklazan", 5));
         //na poczatku wiersza
         //Sprawdzenie metody toString().
         //assertEquals(t.toString(), "EndOfTextOrLine");
