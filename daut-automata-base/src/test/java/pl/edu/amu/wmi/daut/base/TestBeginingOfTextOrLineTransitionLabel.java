@@ -35,7 +35,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
         }
 
         //slowoPuste
-        assertFalse(t.doCheckContext("", 0));
+        assertTrue(t.doCheckContext("", 0));
         //pozycja==0
         assertTrue(t.doCheckContext("pampararam", 0));
         //na nie-poczatku wiersza
