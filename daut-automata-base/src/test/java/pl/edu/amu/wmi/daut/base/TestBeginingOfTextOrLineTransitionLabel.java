@@ -10,7 +10,7 @@ public class TestBeginingOfTextOrLineTransitionLabel extends TestCase {
      * testy.
      */
     public final void testBeginingOfTextOrLineTransitionLabel() {
-        TransitionLabel t = new BeginingOfTextOrLineTransitionLabel()
+        TransitionLabel t = new BeginingOfTextOrLineTransitionLabel();
 
         //pozycja<0
        try {
